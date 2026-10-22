@@ -1,0 +1,28 @@
+GET http://localhost:5212/games
+
+###
+
+GET http://localhost:5212/games/2
+
+###
+POST http://localhost:5212/games
+content-type : application/json
+
+{
+    "name": "hand-eye",
+    "genre": "Action",
+    "releaseDate": "2024-03-23"
+}
+
+###
+PUT http://localhost:5212/games/2
+Content-Type: application/json
+
+{
+    "name" : "Eugene",
+    "Genre": "Action",
+    "ReleaseDate" : "2025-04-07"
+}
+
+###
+DELETE http://localhost:5212/games/33
