@@ -1,6 +1,10 @@
+using GameStore.Api.Data;
 using GameStore.Api.DTOs;
 
 var builder = WebApplication.CreateBuilder(args);
+var connctionString = "Data Source = GameStoreDD.db";
+builder.Services.AddSqlite<GameStoreContext>(connctionString);
+
 var app = builder.Build();
 const string getGameEndPointName = "GetName";
 
